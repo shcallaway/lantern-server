@@ -13,8 +13,7 @@
     "node-sass-middleware": "^0.11.0"
   },
   "scripts": {
-    "start": "node server",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node server"
   },
   "cacheDirectories": [
     "node_modules",
