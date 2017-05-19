@@ -116,6 +116,11 @@ app.get('/tracks/:id([0-9]*)/stream', (req, res) => {
   })
 });
 
+// Handle all other requests
+app.get('*', (req, res) => {
+  res.sendStatus(404)
+})
+
 function getSignedURL(key) {
 
   // Docs: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#getSignedUrl-property
